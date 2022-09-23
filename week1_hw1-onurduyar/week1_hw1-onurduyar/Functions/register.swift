@@ -1,6 +1,6 @@
 //
 //  functions.swift
-//  ass
+//  week1_hw1-onurduyar
 //
 //  Created by Onur Duyar on 23.09.2022.
 //
