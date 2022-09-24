@@ -27,6 +27,7 @@ func register() {
     if age < 10 {
         smurf = BabySmurf(name: name, gender: gender, age: age, job: "No job :(. I'm just a babe")
         createUser(smurf: smurf, productList: [])
+        
     }
     if gender == "W" {
         smurf = WomanSmurf(name: name, gender: gender, age: age, job: "HouseWife")

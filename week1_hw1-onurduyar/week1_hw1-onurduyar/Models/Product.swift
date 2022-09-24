@@ -7,10 +7,14 @@
 
 import Foundation
 
-protocol Product{
-    var name: String { get set }
-    var price: Int { get set }
-    var piece: Int { get set }
+class Product{
+    var name: String
+    var price: Int
+    var piece: Int
     
-    init(name: String, price: Int, piece: Int)
+    init(name: String, price: Int, piece: Int) {
+        self.name = name
+        self.price = price
+        self.piece = piece
+    }
 }

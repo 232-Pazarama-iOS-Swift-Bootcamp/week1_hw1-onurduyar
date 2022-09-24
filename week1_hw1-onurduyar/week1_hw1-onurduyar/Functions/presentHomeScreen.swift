@@ -20,14 +20,32 @@ func presentHomeScreen(user: User) {
         if let choosen = Int(readLine()!) {
             switch choosen {
             case 1:
-                print("Profile information")
-                print("Name: \(user.smurf.name)\t age: \(user.smurf.age)\t gender: \(user.smurf.gender)\t job: \(user.smurf.job)")
+                showProfileInformation(user: user)
                 break
             case 2:
-                print("list of the products")
+                print("*** List Of Products ***")
+                showListOfProducts(user: user)
+                print("Make a choose: ")
+                print("1) Add product to basket")
+                print("2) Add product to favorite")
+                if let choosen2 = Int(readLine()!){
+                    switch choosen2 {
+                    case 1:
+                        print("Enter the index number of the product you want to add to the basket:")
+                        let index = Int(readLine()!)
+                        addToBasket(user: user,index: index!)
+                        break
+                    case 2:
+                        print("Enter the index number of the product you want to add to the favorite:")
+                        break
+                    default:
+                        break
+                    }
+                }
                 break
             case 3:
-                print("Basket")
+                print("*** List Of Basket ***")
+                showBasketList(user: user)
                 break
             case 4:
                 print("list of Favorite")

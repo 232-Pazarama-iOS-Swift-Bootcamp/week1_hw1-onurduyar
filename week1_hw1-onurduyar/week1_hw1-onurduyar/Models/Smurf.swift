@@ -7,14 +7,6 @@
 
 import Foundation
 
-protocol Smurf {
-    var name: String {get set}
-    var gender: String {get set}
-    var age: Int {get set}
-    var job: String {get set}
-    init(name: String, gender: String, age: Int, job: String)
-    
-}
 
 class BrainySmurf : Smurf{
     var gender: String
