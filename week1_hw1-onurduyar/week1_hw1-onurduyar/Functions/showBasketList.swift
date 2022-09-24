@@ -12,7 +12,7 @@ func showBasketList(user: User){
     let basketList = user.basketList
     for (index,item) in basketList.enumerated() {
         print("\n-----------")
-        print("\(index + 1). Product")
+        print("\(index + 1). Product\t item_id: \(item.id)")
         print("Item Name: \(item.name)")
         print("Price: \(item.price) $")
         print("Remaining number of products: \(item.piece)\n")

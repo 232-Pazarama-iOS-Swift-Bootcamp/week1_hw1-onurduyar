@@ -12,8 +12,8 @@ func showFavoriteList(user: User){
     let favoriteList = user.favoriteList
     for (index,item) in favoriteList.enumerated() {
         print("\n-----------")
-        print("\(index + 1). Product")
+        print("\(index + 1). Product\t item_id: \(item.id)")
         print("Item Name: \(item.name)")
-        print("Price: \(item.price) $")
+        print("Price: \(item.price) $\n\n")
     }
 }

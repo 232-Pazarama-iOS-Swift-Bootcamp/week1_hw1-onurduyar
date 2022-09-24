@@ -51,7 +51,23 @@ func presentHomeScreen(user: User) {
                 break
             case 4:
                 print("list of Favorite")
-                showFavoriteList(user: user)
+                print("1) Remove item from favorite list:")
+                print("2) Do nothing and show Favorite List")
+                if let choosenfav = Int(readLine()!) {
+                    switch choosenfav {
+                    case 1:
+                        print("Enter the ID number of the product you want to remove to the favorite:")
+                        let id = readLine()!
+                        removeToFavorite(user: user, id: id)
+                        break
+                    case 2:
+                        print("*** List Of Favorite ***")
+                        showFavoriteList(user: user)
+                        break
+                    default:
+                        break
+                    }
+                }
                 break
             case 5:
                 print("exited...")

@@ -11,7 +11,7 @@ func showListOfProducts(user: User){
     let productList = user.productList
     for (index,item) in productList.enumerated() {
         print("-----------")
-        print("\(index + 1). Product")
+        print("\(index + 1). Product\t item_id: \(item.id)")
         print("Item Name: \(item.name)")
         print("Price: \(item.price) $")
         print("Remaining number of products: \(item.piece)\n")
