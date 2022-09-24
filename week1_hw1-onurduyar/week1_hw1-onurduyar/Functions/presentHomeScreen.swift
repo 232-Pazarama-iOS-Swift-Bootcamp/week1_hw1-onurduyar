@@ -37,6 +37,8 @@ func presentHomeScreen(user: User) {
                         break
                     case 2:
                         print("Enter the index number of the product you want to add to the favorite:")
+                        let index = Int(readLine()!)
+                        addToFavorite(user: user,index: index!)
                         break
                     default:
                         break
@@ -49,6 +51,7 @@ func presentHomeScreen(user: User) {
                 break
             case 4:
                 print("list of Favorite")
+                showFavoriteList(user: user)
                 break
             case 5:
                 print("exited...")

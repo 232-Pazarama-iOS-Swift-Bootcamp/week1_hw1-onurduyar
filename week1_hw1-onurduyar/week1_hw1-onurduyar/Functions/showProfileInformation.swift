@@ -9,6 +9,7 @@ import Foundation
 
 
 func showProfileInformation(user:User){
+    let smurf: Smurf = user.smurf
     print("--- Profile information ---")
-    print("Name: \(user.smurf.name)\t Age: \(user.smurf.age)\t Gender: \(user.smurf.gender)\t Job: \(user.smurf.job)")
+    print("Name: \(smurf.name)\t Age: \(smurf.age)\t Gender: \(smurf.gender)\t Job: \(smurf.job)")
 }
