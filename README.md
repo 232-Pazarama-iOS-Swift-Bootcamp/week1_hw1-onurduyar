@@ -1,4 +1,7 @@
 # week1_work1
+### Description
+***The user is assigned to objects with certain properties in the "Model" according to the inputs the user enters.
+The user was provided to display the product list specific to that user.***
 ## Sample Usage
 <img src="https://github.com/232-Pazarama-iOS-Swift-Bootcamp/week1_hw1-onurduyar/blob/main/video_gif.gif" width="700"/>
 
