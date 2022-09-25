@@ -1,5 +1,51 @@
 # week1_work1
-ilk ödev
+## Sample Usage
+<img src="https://github.com/232-Pazarama-iOS-Swift-Bootcamp/week1_hw1-onurduyar/blob/main/video_gif.gif" width="700"/>
+
+## Models
+### Smurf
+```swift
+protocol Smurf {
+    var name: String {get set}
+    var gender: String {get set}
+    var age: Int {get set}
+    var job: String {get set}
+    
+    init(name: String, gender: String, age: Int, job: String)
+}
+```
+
+### User
+```swift
+class User {
+    let smurf: Smurf
+    var productList: [Product]
+    var basketList: [Product] = [Product]()
+    var favoriteList: [Product] = [Product]()
+    
+    init(me: Smurf, productList: [Product]) {
+        self.smurf = me
+        self.productList = productList
+    }
+    
+}
+```
+
+### Product
+```swift
+class Product{
+    var name: String
+    var price: Int
+    var piece: Int
+    var id: String
+    init(name: String, price: Int, piece: Int,id: String) {
+        self.id = id
+        self.name = name
+        self.price = price
+        self.piece = piece
+    }
+}
+```
 
 # Pazarama iOS Bootcamp – Hafta 1 – Ödev  
 Bir konsept üzerine kurulu pazar yeri uygulaması yapacağız. Bu konsept bir film, anime, video
